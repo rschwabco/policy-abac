@@ -27,6 +27,7 @@
           }
         }
       }
-    }  
+    },
+    "allowedLocations": ["Location1", "Location2", "Location2"] 
   }
   
