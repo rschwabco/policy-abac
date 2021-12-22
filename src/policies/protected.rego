@@ -1,7 +1,7 @@
 package policyabac.GET.api.protected
 
 import input.user.attributes.roles as user_roles
-import input.user.attributes.properties as user_properties
+import input.user.attributes.properties as user_props
 
 default allowed = false
 

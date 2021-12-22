@@ -1,4 +1,7 @@
 {
+    "allowedLocations": ["Location1", "Location2", "Location2"],
+    "allowedDevices": ["MacBook", "PC", "iPhone"],
+    "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     "roles": {
       "viewer": {
         "perms": {
@@ -27,7 +30,6 @@
           }
         }
       }
-    },
-    "allowedLocations": ["Location1", "Location2", "Location2"] 
+    }    
   }
   
