@@ -12,6 +12,9 @@ default enabled = false
 allowed {
 	some i
 	data.roles[user_roles[i]].perms[path].allowed
+	user_props.location == data.allowedLocations[i]
+	user_props.device == data.allowedDevices[i]
+	isworkday
 }
 
 visible {
@@ -22,10 +25,6 @@ visible {
 enabled {
 	some i
 	data.roles[user_roles[i]].perms[path].enabled
-}
-
-visible {
-	user_props.location == "United States"
 }
 
 isworkday {
