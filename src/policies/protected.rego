@@ -25,5 +25,5 @@ enabled {
 }
 
 visible {
-	user_properties.location == "United States"
+	user_props.location == "United States"
 }
