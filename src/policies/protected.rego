@@ -27,3 +27,9 @@ enabled {
 visible {
 	user_props.location == "United States"
 }
+
+isworkday {
+	ns := time.now_ns()	
+	day := time.weekday(ns)
+	day == data.workdays[i]
+}
