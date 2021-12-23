@@ -23,6 +23,12 @@ isworkday {
 	day == data.workdays[i]
 }
 
+isworkdaywithtimezone {
+	ns := time.now_ns()
+	day := time.weekday([ns, user_props.timezone])
+	day == data.workdays[i]
+}
+
 allowed {
 	some i
 	data.roles[user_roles[i]].perms[path].allowed
