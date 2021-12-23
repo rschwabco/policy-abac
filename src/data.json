@@ -1,35 +1,34 @@
 {
-    "allowedLocations": ["Location1", "Location2", "Location2"],
-    "allowedDevices": ["MacBook", "PC", "iPhone"],
-    "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    "roles": {
-      "viewer": {
-        "perms": {
-          "policyabac.GET.api.protected": {
-            "allowed": false,
-            "visible": false,
-            "enabled": false
-          }
-        }
-      },
-      "editor": {
-        "perms": {
-          "policyabac.GET.api.protected": {
-            "allowed": false,
-            "visible": true,
-            "enabled": true
-          }
-        }
-      },
-      "admin": {
-        "perms": {
-          "policyabac.GET.api.protected": {
-            "allowed": true,
-            "visible": true,
-            "enabled": true
-          }
+  "allowedLocations": ["Location1", "Location2", "Location3"],
+  "allowedDevices": ["MacBook", "PC", "iPhone"],
+  "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  "roles": {
+    "viewer": {
+      "perms": {
+        "policyabac.GET.api.protected": {
+          "allowed": false,
+          "visible": false,
+          "enabled": false
         }
       }
-    }    
+    },
+    "editor": {
+      "perms": {
+        "policyabac.GET.api.protected": {
+          "allowed": false,
+          "visible": true,
+          "enabled": true
+        }
+      }
+    },
+    "admin": {
+      "perms": {
+        "policyabac.GET.api.protected": {
+          "allowed": true,
+          "visible": true,
+          "enabled": true
+        }
+      }
+    }
   }
-  
+}
