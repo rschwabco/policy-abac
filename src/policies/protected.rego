@@ -9,18 +9,15 @@ default visible = false
 
 default enabled = false
 
-locationallowed {
-	some i
-	user_props.location == data.allowedlocations[i]
+locationAllowed {
+	user_props.location == data.allowedLocations[i]
 }
 
-deviceallowed {
-	some i
-	user_props.device == data.allowedevices[i]
+deviceAllowed {
+	user_props.device == data.allowedDevices[i]
 }
 
-isworkday {
-	some i
+isWorkDay {
 	ns := time.now_ns()
 	day := time.weekday(ns)
 	day == data.workdays[i]
@@ -29,9 +26,9 @@ isworkday {
 allowed {
 	some i
 	data.roles[user_roles[i]].perms[path].allowed
-	locationallowed
-	deviceallowed
-	isworkday
+	locationAllowed
+	deviceAllowed
+	isWorkDay
 }
 
 visible {

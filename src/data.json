@@ -1,6 +1,6 @@
 {
-  "allowedlocations": ["Location1", "Location2", "Location3"],
-  "alloweddevices": ["MacBook", "PC", "iPhone"],
+  "allowedLocations": ["Location1", "Location2", "Location3"],
+  "allowedDevices": ["MacBook", "PC", "iPhone"],
   "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
   "roles": {
     "viewer": {
