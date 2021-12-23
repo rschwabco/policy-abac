@@ -1,3 +1,3 @@
 {
-    "roots": ["policyabac", "roles", "allowedLocations", "allowedDevices", "workdays"]
+    "roots": ["policyabac", "roles", "allowedlocations", "alloweddevices", "workdays"]
 }
