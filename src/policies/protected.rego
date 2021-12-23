@@ -10,11 +10,11 @@ default visible = false
 default enabled = false
 
 locationallowed {
-	user_props.location == data.allowedLocations[i]
+	user_props.location == data.allowedlocations[i]
 }
 
 deviceallowed {
-	user_props.device == data.allowedDevices[i]
+	user_props.device == data.allowedevices[i]
 }
 
 isworkday {
