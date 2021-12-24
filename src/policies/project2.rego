@@ -1,4 +1,4 @@
-package policyabac.GET.api.projects.projecttwo
+package policyabac.GET.api.projects.project2
 
 import input.user.attributes.properties as user_props
 
