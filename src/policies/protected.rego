@@ -34,7 +34,6 @@ allowed {
 	data.roles[user_roles[i]].perms[path].allowed
 	locationallowed
 	deviceallowed
-	isworkday
 }
 
 visible {

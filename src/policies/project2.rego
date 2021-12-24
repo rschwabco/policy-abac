@@ -8,6 +8,10 @@ default visible = false
 
 default enabled = false
 
+locationallowed {
+	user_props.location == data.allowedLocations[i]
+}
+
 allowed {
 	user_props.project == "project2"
 }
@@ -18,4 +22,5 @@ visible {
 
 enabled {
 	user_props.project == "project2"
+	locationallowed
 }

@@ -8,6 +8,10 @@ default visible = false
 
 default enabled = false
 
+deviceallowed {
+	user_props.device == data.allowedDevices[i]
+}
+
 allowed {
 	user_props.project == "project1"
 }
@@ -18,4 +22,5 @@ visible {
 
 enabled {
 	user_props.project == "project1"
+	deviceallowed
 }
