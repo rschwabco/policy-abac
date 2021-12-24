@@ -9,6 +9,10 @@ default visible = false
 
 default enabled = false
 
+default isworkday = false
+
+default isworkdaywithtimezone = false
+
 locationallowed {
 	user_props.location == data.allowedLocations[i]
 }
