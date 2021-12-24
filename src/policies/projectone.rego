@@ -2,6 +2,12 @@ package policyabac.GET.api.projects.projectone
 
 import input.user.attributes.properties as user_props
 
+default allowed = false
+
+default visible = false
+
+default enabled = false
+
 allowed {
 	user_props.project == "project1"
 }
