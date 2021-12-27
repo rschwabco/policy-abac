@@ -1,4 +1,4 @@
-package policyabac.GET.api.protected
+package policyabac.GET.api.protected.__projectId
 
 import input.user.attributes.properties as user_props
 import input.user.attributes.roles as user_roles
@@ -9,8 +9,6 @@ default visible = false
 
 default enabled = false
 
-default isworkday = false
-
 default isworkdaywithtimezone = false
 
 locationallowed {
@@ -19,12 +17,6 @@ locationallowed {
 
 deviceallowed {
 	user_props.device == data.allowedDevices[i]
-}
-
-isworkday {
-	ns := time.now_ns()
-	day := time.weekday(ns)
-	day == data.workdays[i]
 }
 
 isworkdaywithtimezone {
