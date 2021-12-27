@@ -1,5 +1,4 @@
 {
-  "allowedLocations": ["Location1", "Location2", "Location3"],
-  "allowedDevices": ["MacBook", "PC", "iPhone"],
-  "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday"]
+  "allowedLocations": ["New York", "Paris", "Auckland"],
+  "allowedDevices": ["MacBook", "PC", "iPhone"]
 }

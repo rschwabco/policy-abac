@@ -8,9 +8,9 @@ default visible = false
 
 default enabled = false
 
-default isworkdaywithtimezone = false
+default isworkinghourswithtimezone = false
 
-isworkdaywithtimezone {
+isworkinghourswithtimezone {
 	ns := time.now_ns()
 	clock := time.clock([ns, user_props.timezone])
 	clock[0] >= 8
@@ -32,6 +32,6 @@ visible {
 
 enabled {
 	user_props.project == "project1"
-	isworkdaywithtimezone
+	isworkinghourswithtimezone
 	deviceallowed
 }
