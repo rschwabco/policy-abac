@@ -1,5 +1,6 @@
-package policyabac.GET.api.projects.project2
+package policyabac.GET.api.projects.blue
 
+import data.officeManagement.isWorkingHoursWithTimezone
 import input.user.attributes.properties as user_props
 
 default allowed = false
@@ -7,15 +8,6 @@ default allowed = false
 default visible = false
 
 default enabled = false
-
-default isWorkingHoursWithTimezone = false
-
-isWorkingHoursWithTimezone {
-	ns := time.now_ns()
-	clock := time.clock([ns, user_props.timezone])
-	clock[0] >= 8
-	clock[0] <= 17
-}
 
 deviceAllowed {
 	user_props.device == data.allowedDevices[i]
@@ -26,18 +18,18 @@ locationAllowed {
 }
 
 allowed {
-	user_props.project == "project2"
+	user_props.project == "blue"
 	isWorkingHoursWithTimezone
 	deviceAllowed
 	locationAllowed
 }
 
 visible {
-	user_props.project == "project2"
+	user_props.project == "blue"
 }
 
 enabled {
-	user_props.project == "project2"
+	user_props.project == "blue"
 	locationAllowed
 	deviceAllowed
 }

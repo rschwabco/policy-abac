@@ -1,8 +1,6 @@
-package workinghours
+package officeManagement
 
 import input.user.attributes.properties as user_props
-
-# default isWorkingHoursWithTimezone = false
 
 isWorkingHoursWithTimezone {
 	ns := time.now_ns()

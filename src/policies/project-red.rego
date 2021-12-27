@@ -1,6 +1,6 @@
-package policyabac.GET.api.projects.project1
+package policyabac.GET.api.projects.red
 
-import data.workinghours.isWorkingHoursWithTimezone
+import data.officeManagement.isWorkingHoursWithTimezone
 import input.user.attributes.properties as user_props
 
 default allowed = false
@@ -14,19 +14,16 @@ deviceAllowed {
 }
 
 allowed {
-	user_props.project == "project1"
+	user_props.project == "red"
 	isWorkingHoursWithTimezone
 	deviceAllowed
 }
 
 visible {
-	user_props.project == "project1"
-	isWorkingHoursWithTimezone
-	deviceAllowed
+	user_props.project == "red"
 }
 
 enabled {
-	user_props.project == "project1"
+	user_props.project == "red"
 	isWorkingHoursWithTimezone
-	deviceAllowed
 }
