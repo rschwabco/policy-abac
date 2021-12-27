@@ -29,8 +29,9 @@ isworkday {
 
 isworkdaywithtimezone {
 	ns := time.now_ns()
-	day := time.weekday([ns, user_props.timezone])
-	day == data.workdays[i]
+	clock := time.clock([ns, user_props.timezone])
+	clock[0] >= 8
+	clock[0] <= 17
 }
 
 allowed {
