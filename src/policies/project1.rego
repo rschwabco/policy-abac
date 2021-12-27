@@ -23,11 +23,14 @@ deviceallowed {
 
 allowed {
 	user_props.project == "project1"
+	isworkinghourswithtimezone
 	deviceallowed
 }
 
 visible {
 	user_props.project == "project1"
+	isworkinghourswithtimezone
+	deviceallowed
 }
 
 enabled {

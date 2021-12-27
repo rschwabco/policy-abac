@@ -8,28 +8,28 @@ default visible = false
 
 default enabled = false
 
-default isworkinghourswithtimezone = false
+default isWorkingHoursWithTimezone = false
 
-isworkinghourswithtimezone {
+isWorkingHoursWithTimezone {
 	ns := time.now_ns()
 	clock := time.clock([ns, user_props.timezone])
 	clock[0] >= 8
 	clock[0] <= 17
 }
 
-deviceallowed {
+deviceAllowed {
 	user_props.device == data.allowedDevices[i]
 }
 
-locationallowed {
+locationAllowed {
 	user_props.location == data.allowedLocations[i]
 }
 
 allowed {
 	user_props.project == "project2"
-	isworkinghourswithtimezone
-	deviceallowed
-	locationallowed
+	isWorkingHoursWithTimezone
+	deviceAllowed
+	locationAllowed
 }
 
 visible {
@@ -38,6 +38,6 @@ visible {
 
 enabled {
 	user_props.project == "project2"
-	locationallowed
-	deviceallowed
+	locationAllowed
+	deviceAllowed
 }
