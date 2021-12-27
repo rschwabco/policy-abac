@@ -1,12 +1,12 @@
 package workinghours
 
-# import input.user.attributes.properties as user_props
+import input.user.attributes.properties as user_props
 
 # default isWorkingHoursWithTimezone = false
 
-isWorkingHoursWithTimezone(tz) = x {
+isWorkingHoursWithTimezone {
 	ns := time.now_ns()
-	clock := time.clock([ns, tz])
+	clock := time.clock([ns, user_props.timezone])
 	clock[0] >= 8
 	clock[0] <= 17
 }

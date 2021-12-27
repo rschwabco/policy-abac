@@ -15,18 +15,18 @@ deviceAllowed {
 
 allowed {
 	user_props.project == "project1"
-	isWorkingHoursWithTimezone(user_props.timezone)
+	isWorkingHoursWithTimezone
 	deviceAllowed
 }
 
 visible {
 	user_props.project == "project1"
-	isWorkingHoursWithTimezone(user_props.timezone)
+	isWorkingHoursWithTimezone
 	deviceAllowed
 }
 
 enabled {
 	user_props.project == "project1"
-	isWorkingHoursWithTimezone(user_props.timezone)
+	isWorkingHoursWithTimezone
 	deviceAllowed
 }
