@@ -10,11 +10,11 @@ default visible = false
 default enabled = false
 
 deviceAllowed {
-	user_props.device == data.allowedDevices[i]
+	user_props.device == data.allowedDevices[_]
 }
 
 locationAllowed {
-	user_props.location == data.allowedLocations[i]
+	user_props.location == data.allowedLocations[_]
 }
 
 allowed {
